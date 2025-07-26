@@ -1,57 +1,35 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gene Coverage Table</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/c993345b5e.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/c993345b5e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container-fluid header-wrapper">
-    <div class="col-xs-8">
-      <div class="logo">
-        <img src="Images/pic2.png" alt="logo">
-      </div>
-      <span class="logotext"><b>Gene Coverage Metrics</b></span>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="table-wrapper">
-      <table id="dataTable">
-        <thead>
-          <tr>
-            <td colspan="3">
-              <h1 style="float: left;">Gene Coverage Table <br><span>(SurfSeq)</span></h1>
-              <input type="text" id="searchInput" placeholder="Search by Gene...">
-              <a href="Surfseq_gene_coverage.xlsx" download="Surfseq_gene_coverage"><i class="fa-solid fa-download"></i></a>
-            </td>
-          </tr>
-          <tr class="header">
-            <th>Gene</th>
-            <th>
-              Percentage of coding region covered
-              <div class="sort-arrows">
-                <span id="sortAsc">▲</span>
-                <span id="sortDesc">▼</span>
-              </div>
-            </th>
-          </tr>
-        </thead>
-        <table>
+<table id="dataTable">
+  <thead>
     <tr>
-        <td>A1BG</td>
-        <td>100</td>
+      <td colspan="3">
+        <h1 style="float: left;">Gene Coverage Table <br><span>(SurfSeq)</span></h1>
+        <input type="text" id="searchInput" placeholder="Search by Gene...">
+        <a href="Surfseq_gene_coverage.xlsx" download="Surfseq_gene_coverage"><i class="fa-solid fa-download"></i></a>
+      </td>
+    </tr>
+    <tr class="header">
+      <th>Gene</th>
+      <th>
+        Percentage of coding region covered
+        <div class="sort-arrows">
+          <span id="sortAsc">▲</span>
+          <span id="sortDesc">▼</span>
+        </div>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A1BG</td>
+      <td>100</td>
     </tr>
     <tr>
-        <td>A1CF</td>
-        <td>100</td>
+      <td>A1CF</td>
+      <td>100</td>
     </tr>
     <tr>
-        <td>A2M</td>
-        <td>100</td>
+      <td>A2M</td>
+      <td>100</td>
     </tr>
     <tr>
         <td>A2ML1</td>
