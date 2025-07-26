@@ -1,59 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gene Coverage Table</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c993345b5e.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/c993345b5e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Header -->
   <div class="container-fluid header-wrapper">
     <div class="col-xs-8">
       <div class="logo">
-        <img src="Images/pic2.png" alt="logo" />
+        <img src="Images/pic2.png" alt="logo">
       </div>
       <span class="logotext"><b>Gene Coverage Metrics</b></span>
     </div>
   </div>
 
-  <!-- Table Section -->
   <div class="container">
     <div class="table-wrapper">
       <table id="dataTable">
         <thead>
-          <!-- Table header with title and search/download -->
           <tr>
-            <th colspan="2" style="text-align: left;">
-              <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-                <div>
-                  <h1 style="margin: 0;">Gene Coverage Table <br><span style="font-size: 0.7em;">(SurfSeq)</span></h1>
-                </div>
-                <div>
-                  <input type="text" id="searchInput" placeholder="Search by Gene..." />
-                  <a href="Surfseq_gene_coverage_July_2025.xlsx" download="Surfseq_gene_coverage" title="Download Excel">
-                    <i class="fa-solid fa-download fa-xl" style="margin-left: 10px;"></i>
-                  </a>
-                </div>
-              </div>
-            </th>
+            <td colspan="3">
+              <h1 style="float: left;">Gene Coverage Table <br><span>(SURFSeq)</span></h1>
+              <input type="text" id="searchInput" placeholder="Search by Gene...">
+              <a href="Surfseq_gene_coverage_July_2025.xlsx" download="GenolabM_gene_coverage"><i class="fa-solid fa-download"></i></a>
+            </td>
           </tr>
-
-          <!-- Column headers -->
           <tr class="header">
             <th>Gene</th>
             <th>
               Percentage of coding region covered
-              <span class="sort-arrows">
-                <span id="sortAsc" style="cursor:pointer;">▲</span>
-                <span id="sortDesc" style="cursor:pointer;">▼</span>
-              </span>
+              <div class="sort-arrows">
+                <span id="sortAsc">▲</span>
+                <span id="sortDesc">▼</span>
+              </div>
             </th>
           </tr>
         </thead>
-  <tbody>
+        <tbody>
     <tr>
       <td>A1BG</td>
       <td>100</td>
